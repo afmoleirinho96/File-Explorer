@@ -1,0 +1,43 @@
+@import 'src/styles.scss';
+
+:host,
+.file-explorer-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height:auto;
+  min-height: 100%;
+
+}
+
+:host {
+  flex-direction: column;
+
+}
+.file-explorer-content {
+  overflow: auto;
+}
+.footer {
+  display:flex;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  background-color: $verve-ventures-color-1;
+
+  .social > a img {
+    width: 32px;
+    height:auto;  }
+
+  /*
+
+  .file-explorer-content {
+
+  }
+  */
+
+
+}
+
+
+
+

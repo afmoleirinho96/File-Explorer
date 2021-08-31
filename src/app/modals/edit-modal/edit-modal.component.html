@@ -1,0 +1,29 @@
+
+
+
+  <h1 mat-dialog-title>{{title}}</h1>
+
+  <mat-dialog-content>
+    <mat-form-field *ngIf="file.name">
+      <input matInput placeholder="File Name" [(ngModel)]="file.name">
+    </mat-form-field>
+
+    <mat-form-field *ngIf="file.webContentLink">
+      <input matInput placeholder="Download Link" [(ngModel)]="file.webContentLink">
+    </mat-form-field>
+
+    <mat-form-field *ngIf="file.webViewLink">
+      <input matInput placeholder="Browser Link" [(ngModel)]="file.webViewLink">
+    </mat-form-field>
+
+    <div>
+      <span>Last Modified at: {{file.modifiedTime | date:'MMM d, y, h:mm:ss' }}</span>
+    </div>
+
+  </mat-dialog-content>
+
+  <mat-dialog-actions style="justify-content: flex-end">
+    <button mat-raised-button mat-dialog-close color="accent">Cancel</button>
+    <button mat-raised-button [mat-dialog-close]="onModalClose(file)" color="primary">OK</button>
+  </mat-dialog-actions>
+

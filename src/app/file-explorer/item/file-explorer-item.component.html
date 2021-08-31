@@ -1,0 +1,46 @@
+<div class="file-item-container">
+
+  <div class="file" matTooltip="Right click to perform actions! &#13; &#13;
+                                Last modified:&#13; {{file.modifiedTime | date:'MMM d, y' }}"
+       matTooltipPosition="below"
+       [matTooltipClass]="'file-tooltip'"
+       (click)="onClick(file)"
+       (contextmenu)="onFileMenuOpened($event)">
+    <img [src]="file.iconLink"/>
+    <span *ngIf="file?.name" class="file-name">{{ file.name.length > 40 ? (file.name | slice:0:40 ).concat("...") : file.name}}</span>
+  </div>
+
+  <div style="visibility: hidden; position: fixed"
+       [style.left]="fileMenuPosition.x"
+       [style.top]="fileMenuPosition.y"
+       [matMenuTriggerFor]="fileMenuTemplate">
+  </div>
+
+  <mat-menu #fileMenuTemplate="matMenu" class="xpto">
+    <div (mouseleave)="mouseLeaveMenu()">
+      <ng-template matMenuContent>
+        <button mat-menu-item (click)="openInNewTab(file.webViewLink)">
+          <mat-icon class="menu-item-icon">tab</mat-icon>
+          <span class="menu-item-text">Open link in new tab</span>
+        </button>
+        <button *ngIf="file.webContentLink" mat-menu-item (click)="downloadFile(file.webContentLink)">
+          <mat-icon>download</mat-icon>
+          <span class="menu-item-text">Download</span>
+        </button>
+        <button mat-menu-item (click)="renameFile()">
+          <mat-icon>drive_file_rename_outline</mat-icon>
+          <span class="menu-item-text">Rename</span>
+        </button>
+        <button mat-menu-item (click)="editFile()">
+          <mat-icon>link</mat-icon>
+          <span class="menu-item-text">Edit link(s)</span>
+        </button>
+        <button mat-menu-item (click)="deleteFile()">
+          <mat-icon>delete</mat-icon>
+          <span>Delete</span>
+        </button>
+      </ng-template>
+    </div>
+  </mat-menu>
+</div>
+

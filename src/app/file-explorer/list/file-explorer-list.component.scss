@@ -1,0 +1,17 @@
+:host {
+  display:flex;
+  flex-direction: column;
+}
+.container {
+  display:flex;
+  flex-direction: column;
+  .breadcrumb {
+    background-color: rgba(214, 231, 239, 0.75); //#d6e7ef
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .file-list {
+    margin: 0 15px;
+  }
+}

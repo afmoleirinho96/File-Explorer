@@ -1,0 +1,43 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+$verve-ventures-color-1: rgba(153, 194, 214); //#99c2d6
+$verve-ventures-color-2: rgba(0, 101, 153, 0.75); //#006599
+
+
+@mixin verve-ventures-with-transparency($color, $transparency) {
+  background-color: rgba($color, $transparency)
+
+}
+::ng-deep .mat-tooltip {
+  background-color: $verve-ventures-color-2;
+  font-size: 13px;
+  white-space: pre-line;
+  //animation: tooltipOpacity 5s infinite;
+  padding: 10px 10px !important;
+  max-width: 100px !important;
+}
+
+/*@keyframes tooltipOpacity {
+  0%   { opacity: 0.5; }
+  50%   { opacity: 0.7; }
+  100% { opacity: 0.8; }
+}*/
+
+
+
+body {
+  margin: 0;
+
+
+}
+.toolbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  background-color: $verve-ventures-color-1;
+  color: white;
+  height: 40px;
+}

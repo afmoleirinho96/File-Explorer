@@ -1,0 +1,330 @@
+{
+  "files": [
+    {
+      "id": "1WfivxkwoGv9C2mB_BS2E2m5yJwbAPuXx",
+      "name": "Screenshot 2021-08-19 at 22.44.03.png",
+      "mimeType": "image/png",
+      "parents": [
+          "1TME1zbZQ8GGXCxWu4muDmu7Ibgd5"
+      ],
+      "webContentLink": "https://drive.google.com/uc?id=1WfivxkwoGv9C2mB_BS2E2m5yJwbAPuXx&export=download",
+      "webViewLink": "https://drive.google.com/file/d/1WfivxkwoGv9C2mB_BS2E2m5yJwbAPuXx/view?usp=drivesdk",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/image/png",
+      "modifiedTime": "2021-08-24T10:47:12.112Z",
+      "size": "1130327"
+  },
+  {
+      "id": "1ECdTPcPOrF2xWW_XFC4LH0oQX0oz",
+      "name": "somethings.ts",
+      "mimeType": "text/texmacs",
+      "parents": [
+          "1TME1zbZQ8GGXCxWu4muDmu7Ibgd5"
+      ],
+      "webContentLink": "https://drive.google.com/uc?id=1ECdTPcPOrF2xWW_XFC4LH0oQX0oz&export=download",
+      "webViewLink": "https://drive.google.com/file/d/1ECdTPcPOrF2xWW_XFC4LH0oQX0oz/view?usp=drivesdk",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/text/texmacs",
+      "modifiedTime": "2021-08-24T10:42:58.238Z",
+      "size": "973"
+  },
+  {
+      "id": "1TME1zbZQ8GGXCxWu4muDmu7Ibgd5",
+      "name": "testFolder",
+      "mimeType": "application/vnd.google-apps.folder",
+      "parents": [],
+      "webViewLink": "https://drive.google.com/drive/folders/1jcSHdiRxA3RPJLIIFGZGeSYvO-KN",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder",
+      "modifiedTime": "2021-08-24T07:41:17.115Z"
+  },
+  {
+      "id": "1r4ee9pR9OcJeB3CTvCsYBGX0IgyY",
+      "name": "testFile2.png",
+      "mimeType": "image/png",
+      "parents": [
+          "1TME1zbZQ8GGXCxWu4muDmu7Ibgd5"
+      ],
+      "webContentLink": "https://drive.google.com/uc?id=1r4ee9pR9OcJeB3CTvCsYBGX0IgyY&export=download",
+      "webViewLink": "https://drive.google.com/file/d/1r4ee9pR9OcJeB3CTvCsYBGX0IgyY/view?usp=drivesdk",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/image/png",
+      "modifiedTime": "2021-08-24T07:38:54.257Z",
+      "size": "168805"
+  },
+  {
+      "id": "1vN_frPJIAo5evwNhZYIdkSps5DW0p",
+      "name": "_Kevin",
+      "mimeType": "application/vnd.google-apps.folder",
+      "parents": [
+          "1TME1zbZQ8GGXCxWu4muDmu7Ibgd5"
+      ],
+      "webViewLink": "https://drive.google.com/drive/folders/1vN_frPJIAo5evwNhZYIdkSps5DW0p",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder",
+      "modifiedTime": "2021-06-06T10:33:18.194Z"
+  },
+  {
+      "id": "1Ldu9rdHlH2rDNQWKdrmmoLYw24S86",
+      "name": "Partnerships",
+      "mimeType": "application/vnd.google-apps.folder",
+      "parents": [
+          "1TME1zbZQ8GGXCxWu4muDmu7Ibgd5"
+      ],
+      "webViewLink": "https://drive.google.com/drive/folders/1Ldu9rdHlH2rDNQWKdrmmoLYw24S86",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder",
+      "modifiedTime": "2021-01-19T07:28:40.460Z"
+  },
+  {
+      "id": "1EaCDriX32WdFbSJuqKtvnj4fH9ge",
+      "name": "Signing Helper",
+      "mimeType": "application/vnd.google-apps.folder",
+      "parents": [
+          "1TME1zbZQ8GGXCxWu4muDmu7Ibgd5"
+      ],
+      "webViewLink": "https://drive.google.com/drive/folders/1EaCDriX32WdFbSJuqKtvnj4fH9ge",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder+shared",
+      "modifiedTime": "2021-01-14T12:23:21.792Z"
+  },
+  {
+      "id": "1Lz7EdzbmH2T0T7Yuj94TrSLE29Yc",
+      "name": "Exports",
+      "mimeType": "application/vnd.google-apps.folder",
+      "parents": [
+          "1TME1zbZQ8GGXCxWu4muDmu7Ibgd5"
+      ],
+      "webViewLink": "https://drive.google.com/drive/folders/1Lz7EdzbmH2T0T7Yuj94TrSLE29Yc",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder",
+      "modifiedTime": "2020-12-17T10:19:41.808Z"
+  },
+  {
+      "id": "1PYiJlWbhD3-G-kvlqYYdOEAMyuek",
+      "name": "Infrastructure",
+      "mimeType": "application/vnd.google-apps.folder",
+      "parents": [
+          "1TME1zbZQ8GGXCxWu4muDmu7Ibgd5"
+      ],
+      "webViewLink": "https://drive.google.com/drive/folders/1PYiJlWbhD3-G-kvlqYYdOEAMyuek",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder",
+      "modifiedTime": "2020-11-18T10:30:35.829Z"
+  },
+  {
+      "id": "19UQho8Z1QMn5TPZdJq4ZcAcP1rS-",
+      "name": "Videos",
+      "mimeType": "application/vnd.google-apps.folder",
+      "parents": [
+          "1TME1zbZQ8GGXCxWu4muDmu7Ibgd5"
+      ],
+      "webViewLink": "https://drive.google.com/drive/folders/19UQho8Z1QMn5TPZdJq4ZcAcP1rS-",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder",
+      "modifiedTime": "2020-09-30T13:12:02.157Z"
+  },
+  {
+      "id": "11piAT8bcuH_ca-eKkAr_tm4kL9lkdV61Gp7E44Y",
+      "name": "Workbench / Dealboard manual ",
+      "mimeType": "application/vnd.google-apps.document",
+      "parents": [
+          "1TME1zbZQ8GGXCxWu4muDmu7Ibgd5"
+      ],
+      "webViewLink": "https://docs.google.com/document/d/11piAT8bcuH_ca-eKkAr_tm4kL9lkdV61Gp7E44Y/edit?usp=drivesdk",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.document",
+      "modifiedTime": "2020-08-31T13:21:58.657Z"
+  },
+  {
+      "id": "10XLRFRg3Bt1u32z5sYbhZF-kXsbTGAgg5V_s6m8",
+      "name": "ML usecases",
+      "mimeType": "application/vnd.google-apps.document",
+      "parents": [
+          "1TME1zbZQ8GGXCxWu4muDmu7Ibgd5"
+      ],
+      "webViewLink": "https://docs.google.com/document/d/10XLRFRg3Bt1u32z5sYbhZF-kXsbTGAgg5V_s6m8/edit?usp=drivesdk",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.document",
+      "modifiedTime": "2020-08-03T13:49:38.595Z"
+  },
+  {
+      "id": "1KPbTH6gTRQr29bmDw4LMVGwq21j6uExxo9tYxI",
+      "name": "New ticket management system - issues & thoughts",
+      "mimeType": "application/vnd.google-apps.document",
+      "parents": [
+          "1TME1zbZQ8GGXCxWu4muDmu7Ibgd5"
+      ],
+      "webViewLink": "https://docs.google.com/document/d/1KPbTH6gTRQr29bmDw4LMVGwq21j6uExxo9tYxI/edit?usp=drivesdk",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.document",
+      "modifiedTime": "2020-07-13T06:33:31.799Z"
+  },
+  {
+      "id": "1ekMgW3f6OxglnxS3Q0nsCB_4aVq3",
+      "name": "Security",
+      "mimeType": "application/vnd.google-apps.folder",
+      "parents": [
+          "1TME1zbZQ8GGXCxWu4muDmu7Ibgd5"
+      ],
+      "webViewLink": "https://drive.google.com/drive/folders/1ekMgW3f6OxglnxS3Q0nsCB_4aVq3",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder",
+      "modifiedTime": "2020-06-23T16:10:03.400Z"
+  },
+  {
+      "id": "1QxdAHOLkdTMctHIykbx8aYngm5ks",
+      "name": "Architecture and design",
+      "mimeType": "application/vnd.google-apps.folder",
+      "parents": [
+          "1TME1zbZQ8GGXCxWu4muDmu7Ibgd5"
+      ],
+      "webViewLink": "https://drive.google.com/drive/folders/1QxdAHOLkdTMctHIykbx8aYngm5ks",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder",
+      "modifiedTime": "2020-03-25T10:27:09.225Z"
+  },
+  {
+      "id": "1N8Nghf7ipvX_sAwdHIkF9kAh1Ql",
+      "name": "OKI Printer Driver Mac.dmg",
+      "mimeType": "application/x-apple-diskimage",
+      "parents": [
+          "1TME1zbZQ8GGXCxWu4muDmu7Ibgd5"
+      ],
+      "webContentLink": "https://drive.google.com/uc?id=1N8Nghf7ipvX_sAwdHIkF9kAh1Ql&export=download",
+      "webViewLink": "https://drive.google.com/file/d/1N8Nghf7ipvX_sAwdHIkF9kAh1Ql/view?usp=drivesdk",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/x-apple-diskimage",
+      "modifiedTime": "2019-11-20T07:57:21.714Z",
+      "size": "11199886"
+  },
+  {
+      "id": "1DfsL8xFK2MuZEa66MCvPfxx0oapM",
+      "name": "OKI Printer Driver Windows.exe",
+      "mimeType": "application/x-dosexec",
+      "parents": [
+          "1TME1zbZQ8GGXCxWu4muDmu7Ibgd5"
+      ],
+      "webContentLink": "https://drive.google.com/uc?id=1DfsL8xFK2MuZEa66MCvPfxx0oapM&export=download",
+      "webViewLink": "https://drive.google.com/file/d/1DfsL8xFK2MuZEa66MCvPfxx0oapM/view?usp=drivesdk",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/x-dosexec",
+      "modifiedTime": "2019-11-20T07:57:19.408Z",
+      "size": "14491624"
+  },
+  {
+      "id": "1P9FWfxKKCUvnSlUdwEt2TyLP6KQ",
+      "name": "Landing page IT.pdf",
+      "mimeType": "application/pdf",
+      "parents": [
+          "1TME1zbZQ8GGXCxWu4muDmu7Ibgd5"
+      ],
+      "webContentLink": "https://drive.google.com/uc?id=1P9FWfxKKCUvnSlUdwEt2TyLP6KQ&export=download",
+      "webViewLink": "https://drive.google.com/file/d/1P9FWfxKKCUvnSlUdwEt2TyLP6KQ/view?usp=drivesdk",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/pdf",
+      "modifiedTime": "2019-10-11T14:21:08.041Z",
+      "size": "3789605"
+  },
+  {
+      "id": "19gybG9r2SS9d9g7JWbBEc3WIE1Kn",
+      "name": "Games",
+      "mimeType": "application/vnd.google-apps.folder",
+      "parents": [
+          "1TME1zbZQ8GGXCxWu4muDmu7Ibgd5"
+      ],
+      "webViewLink": "https://drive.google.com/drive/folders/19gybG9r2SS9d9g7JWbBEc3WIE1Kn",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder",
+      "modifiedTime": "2019-09-25T14:44:43.901Z"
+  },
+  {
+      "id": "1ItPODxCn7QQ3NkXWSGJWdgp53RM",
+      "name": "Learning",
+      "mimeType": "application/vnd.google-apps.folder",
+      "parents": [
+          "1TME1zbZQ8GGXCxWu4muDmu7Ibgd5"
+      ],
+      "webViewLink": "https://drive.google.com/drive/folders/1ItPODxCn7QQ3NkXWSGJWdgp53RM",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder",
+      "modifiedTime": "2019-08-30T08:07:24.150Z"
+  },
+  {
+      "id": "1f6LynGqm057DM2hMHycgnul2J",
+      "name": "Pricing-domain2.drawio",
+      "mimeType": "application/vnd.jgraph.mxfile",
+      "parents": [
+          "1QxdAHOLkdTMctHIykbx8aYngm5ks"
+      ],
+      "webContentLink": "https://drive.google.com/uc?id=1f6LynGqm057DM2hMHycgnul2J&export=download",
+      "webViewLink": "https://drive.google.com/file/d/1f6LynGqm057DM2hMHycgnul2J/view?usp=drivesdk",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.jgraph.mxfile",
+      "modifiedTime": "2021-05-10T06:12:12.675Z",
+      "size": "2039"
+  },
+  {
+      "id": "1ycaGjT6xxoB1ITSLgz2uVOjhocKo",
+      "name": "FeeModel.drawio",
+      "mimeType": "application/vnd.jgraph.mxfile",
+      "parents": [
+          "1QxdAHOLkdTMctHIykbx8aYngm5ks"
+      ],
+      "webContentLink": "https://drive.google.com/uc?id=1ycaGjT6xxoB1ITSLgz2uVOjhocKo&export=download",
+      "webViewLink": "https://drive.google.com/file/d/1ycaGjT6xxoB1ITSLgz2uVOjhocKo/view?usp=drivesdk",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.jgraph.mxfile",
+      "modifiedTime": "2021-05-05T16:03:30.676Z",
+      "size": "550"
+  },
+  {
+      "id": "1E3-A4fVJIquElRejwX7nJH6Hxx",
+      "name": "Pricing-domain.drawio",
+      "mimeType": "application/vnd.jgraph.mxfile",
+      "parents": [
+          "1QxdAHOLkdTMctHIykbx8aYngm5ks"
+      ],
+      "webContentLink": "https://drive.google.com/uc?id=1E3-A4fVJIquElRejwX7nJH6Hxx&export=download",
+      "webViewLink": "https://drive.google.com/file/d/1E3-A4fVJIquElRejwX7nJH6Hxx/view?usp=drivesdk",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.jgraph.mxfile",
+      "modifiedTime": "2021-05-05T12:11:29.324Z",
+      "size": "2018"
+  },
+  {
+      "id": "10UnokovwKXfmnZ3fVB1uQ33Sw",
+      "name": "pricing-initial-process.drawio",
+      "mimeType": "application/vnd.jgraph.mxfile",
+      "parents": [
+          "1QxdAHOLkdTMctHIykbx8aYngm5ks"
+      ],
+      "webContentLink": "https://drive.google.com/uc?id=10UnokovwKXfmnZ3fVB1uQ33Sw&export=download",
+      "webViewLink": "https://drive.google.com/file/d/10UnokovwKXfmnZ3fVB1uQ33Sw/view?usp=drivesdk",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.jgraph.mxfile",
+      "modifiedTime": "2021-05-02T16:15:24.534Z",
+      "size": "2446"
+  },
+  {
+      "id": "1vOLWNFHFYB73CjTMaDFnsjYa7",
+      "name": "Pricing model.drawio",
+      "mimeType": "application/vnd.jgraph.mxfile",
+      "parents": [
+          "1QxdAHOLkdTMctHIykbx8aYngm5ks"
+      ],
+      "webContentLink": "https://drive.google.com/uc?id=1vOLWNFHFYB73CjTMaDFnsjYa7&export=download",
+      "webViewLink": "https://drive.google.com/file/d/1vOLWNFHFYB73CjTMaDFnsjYa7/view?usp=drivesdk",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.jgraph.mxfile",
+      "modifiedTime": "2021-04-28T13:41:36.395Z",
+      "size": "1522"
+  },
+  {
+      "id": "1hzfqYgcv4zI0RJPxQVl5kqZNBy1c",
+      "name": "Technical debt / improvements",
+      "mimeType": "application/vnd.google-apps.folder",
+      "parents": [
+          "1QxdAHOLkdTMctHIykbx8aYngm5ks"
+      ],
+      "webViewLink": "https://drive.google.com/drive/folders/1hzfqYgcv4zI0RJPxQVl5kqZNBy1c",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder",
+      "modifiedTime": "2020-10-27T10:26:39.684Z"
+  },
+  {
+      "id": "1gpUTpdyIvJaIzYahTw3CJHorJp",
+      "name": "Dave",
+      "mimeType": "application/vnd.google-apps.folder",
+      "parents": [
+          "1QxdAHOLkdTMctHIykbx8aYngm5ks"
+      ],
+      "webViewLink": "https://drive.google.com/drive/folders/1gpUTpdyIvJaIzYahTw3CJHorJp",
+      "iconLink": "https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder",
+      "modifiedTime": "2020-10-27T10:25:13.543Z"
+  },
+    {
+      "id": "1asdTpdyIvJaIzYahTw3CJYUnOR",
+      "name": "Verve Ventures",
+      "mimeType": "image/png",
+      "parents": [],
+      "webViewLink": "https://www.verve.vc/",
+      "iconLink": "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/qys3jqmdb3vh4voultsp",
+      "modifiedTime": "2020-10-27T10:25:13.543Z"
+    }
+  ]
+}

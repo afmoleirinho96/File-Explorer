@@ -1,0 +1,14 @@
+<div class="container">
+  <mat-toolbar class="breadcrumb">{{breadCrumbPath}}</mat-toolbar>
+  <div class="file-list">
+    <mat-grid-list *ngIf="files && files.length > 0" cols="12" rowHeight="1:1">
+      <mat-grid-tile *ngFor="let file of files">
+        <file-explorer-item [file]="file"
+                            (openFolder)="navigateToFolder($event)"
+                            (fileEdited)="updateFileProperties($event)"
+                            (fileDeleted)="deleteFile($event)">
+        </file-explorer-item>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>
