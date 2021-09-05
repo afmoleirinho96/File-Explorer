@@ -21,8 +21,8 @@ export class Backend {
   constructor() {
   }
 
-  getFile(id: string) {
-    return of(this.serverFiles).pipe(delay(500), map(x => x.filter(y => y.id === id)));
+  getFile(id: string): Observable<ResponseFile> {
+    return of(this.serverFiles).pipe(delay(500), map(x => x.filter(y => y.id === id)[0]));
   }
 
   getFiles(fieldsFilter: Partial<ResponseFile>): Observable<ResponseFile[]> {
@@ -46,14 +46,6 @@ export class Backend {
       }
       if (fieldsFilter.parents) {
         isSuccess = this.compareArrays(fieldsFilter.parents, y.parents);
-       /* if (!isSuccess) {
-          this.getFile(fieldsFilter.parents[0]).subscribe(res => {
-            if (res.length <= 0) {
-              console.log("yup");
-              throw Error("The id provided doesn't exist");
-            }
-          })
-        }*/
       }
       if (fieldsFilter.size) {
         isSuccess = fieldsFilter.size === y.size;

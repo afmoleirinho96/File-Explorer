@@ -1,41 +1,49 @@
 <div class="file-item-container">
 
-  <div class="file" matTooltip="Right click to perform actions! &#13; &#13;
-                                Last modified:&#13; {{file.modifiedTime | date:'MMM d, y' }}"
+  <div class="file"
+       [ngClass]="{'clicked': toggleTile}"
+       fileHighlight
+       matTooltip="Right click to perform actions! &#13; &#13; Last modified:&#13; {{file.modifiedTime | date:'MMM d, y' }}"
        matTooltipPosition="below"
        [matTooltipClass]="'file-tooltip'"
-       (click)="onClick(file)"
+       (dblclick)="onFileSelected(file)"
        (contextmenu)="onFileMenuOpened($event)">
-    <img [src]="file.iconLink"/>
-    <span *ngIf="file?.name" class="file-name">{{ file.name.length > 40 ? (file.name | slice:0:40 ).concat("...") : file.name}}</span>
+    <img [src]="file.iconLink" alt="File image"/>
+    <span *ngIf="file?.name"
+          class="file-name">{{ file.name.length > 40 ? (file.name | slice:0:40).concat("...") : file.name}}
+    </span>
   </div>
 
-  <div style="visibility: hidden; position: fixed"
+  <div class="file-menu-container"
        [style.left]="fileMenuPosition.x"
        [style.top]="fileMenuPosition.y"
        [matMenuTriggerFor]="fileMenuTemplate">
   </div>
 
-  <mat-menu #fileMenuTemplate="matMenu" class="xpto">
+  <mat-menu #fileMenuTemplate="matMenu" class="file-item-menu">
     <div (mouseleave)="mouseLeaveMenu()">
       <ng-template matMenuContent>
         <button mat-menu-item (click)="openInNewTab(file.webViewLink)">
           <mat-icon class="menu-item-icon">tab</mat-icon>
-          <span class="menu-item-text">Open link in new tab</span>
+          <span>Open link in new tab</span>
         </button>
         <button *ngIf="file.webContentLink" mat-menu-item (click)="downloadFile(file.webContentLink)">
           <mat-icon>download</mat-icon>
-          <span class="menu-item-text">Download</span>
+          <span>Download</span>
         </button>
         <button mat-menu-item (click)="renameFile()">
           <mat-icon>drive_file_rename_outline</mat-icon>
-          <span class="menu-item-text">Rename</span>
+          <span>Rename</span>
         </button>
-        <button mat-menu-item (click)="editFile()">
+        <button mat-menu-item (click)="onFileDuplicated()">
+          <mat-icon>file_copy</mat-icon>
+          <span>Make copy</span>
+        </button>
+        <button mat-menu-item (click)="editFileLinks()">
           <mat-icon>link</mat-icon>
-          <span class="menu-item-text">Edit link(s)</span>
+          <span>Edit link(s)</span>
         </button>
-        <button mat-menu-item (click)="deleteFile()">
+        <button mat-menu-item (click)="onFileDeleted()">
           <mat-icon>delete</mat-icon>
           <span>Delete</span>
         </button>

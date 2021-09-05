@@ -1,17 +1,55 @@
 :host {
-  display:flex;
+  display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
+
 .container {
-  display:flex;
+  display: flex;
   flex-direction: column;
-  .breadcrumb {
-    background-color: rgba(214, 231, 239, 0.75); //#d6e7ef
-    height: 30px;
-    font-size: 14px;
+  flex-grow: 1;
+  overflow: hidden;
+
+  .refresh-container {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      margin-right: 30px;
+      padding-top: 10px;
+    }
   }
 
   .file-list {
     margin: 0 15px;
+
+    .folder-container {
+      min-height: 150px;
+    }
+
+    .folder-container, .other-files-container {
+
+      .folder-header, .other-files-header {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        margin: 0 15px;
+        border-bottom: 1.2px solid rgba(0, 101, 153, 0.2);
+        padding: 2px 2px 5px;
+
+        .folder-header-title, .other-files-header-title {
+          padding-top: 2px;
+          padding-left: 10px;
+          font-weight: 500;
+        }
+      }
+    }
   }
 }
+
+
+
+
+
+
+

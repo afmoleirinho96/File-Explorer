@@ -1,35 +1,66 @@
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
-$verve-ventures-color-1: rgba(153, 194, 214); //#99c2d6
-$verve-ventures-color-2: rgba(0, 101, 153, 0.75); //#006599
+$file-explorer-color-1: rgba(153, 194, 214); //#99c2d6 Mat menu
+$file-explorer-color-2: rgba(0, 101, 153, 0.75); //#006599
+$file-explorer-color-3: rgb(214, 231, 239);
+$file-explorer-color-4: rgb(220, 236, 239);
 
 
-@mixin verve-ventures-with-transparency($color, $transparency) {
+@mixin color-with-transparency($color, $transparency) {
   background-color: rgba($color, $transparency)
-
 }
+
 ::ng-deep .mat-tooltip {
-  background-color: $verve-ventures-color-2;
-  font-size: 13px;
+  background-color: $file-explorer-color-2;
+  font-size: 12px;
   white-space: pre-line;
-  //animation: tooltipOpacity 5s infinite;
-  padding: 10px 10px !important;
+  padding: 8px 8px !important;
   max-width: 100px !important;
 }
 
-/*@keyframes tooltipOpacity {
-  0%   { opacity: 0.5; }
-  50%   { opacity: 0.7; }
-  100% { opacity: 0.8; }
-}*/
+::ng-deep mat-dialog-content {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+}
 
+::ng-deep .link-dialog-container {
+  height: 400px;
+  mat-form-field {
+    height:60px;
+  }
 
+  mat-dialog-actions {
+    align-items: self-end;
+  }
+
+  mat-dialog-content {
+    height: calc(100% - 96px);
+    max-height: unset
+  }
+}
+
+::ng-deep .file-item-menu {
+  @include color-with-transparency($file-explorer-color-4, 0.9);
+
+  ::ng-deep .mat-menu-item.cdk-program-focused:not([disabled]) {
+    background: transparent;
+  }
+
+  .mat-menu-item:hover:not([disabled]),
+  .mat-menu-item.cdk-keyboard-focused:not([disabled]),
+  .mat-menu-item-highlighted:not([disabled]) {
+    @include color-with-transparency($file-explorer-color-1, 0.9);
+    border-radius: 10px;
+  }
+}
 
 body {
+  min-height: 100vh;
+  display: flex;
   margin: 0;
-
-
 }
+
 .toolbar {
   position: sticky;
   top: 0;
@@ -37,7 +68,7 @@ body {
   right: 0;
   display: flex;
   align-items: center;
-  background-color: $verve-ventures-color-1;
+  background-color: $file-explorer-color-1;
   color: white;
   height: 40px;
 }

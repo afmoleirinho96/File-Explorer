@@ -1,0 +1,11 @@
+<div class="container" matTooltip="Upload a file from browser or drag and drop." matTooltipPosition="below"
+     uploadDragDrop (fileDropped)="onFileDropped($event)">
+  <input type="file" #fileDragDropReference (change)="onFileBrowsed($event.target)"/>
+
+  <label class="file-upload-label">
+    <span>Upload file</span>
+    <mat-icon class="material-icons-outlined">
+      cloud_upload
+    </mat-icon>
+  </label>
+</div>

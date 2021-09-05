@@ -1,47 +1,62 @@
 @import "src/styles";
 
-::ng-deep .xpto {
-  //@include verve-ventures-with-transparency($verve-ventures-color-1, 0.8);
-  background-color: rgba(214, 231, 239);
-}
 :host {
+  display: flex;
+  flex-direction: column;
   min-height: 90px;
   min-width: 140px;
-  max-height:150px;
+  max-height: 150px;
+  height: 100%;
+  margin-top: 10px;
 
-  .file {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-
-    img {
-      width: 30px;
-      height: 30px;
-      object-fit: cover;
-    }
-
-    .file-name {
-      margin-top: 10px;
-      text-align: center;
-      word-wrap: break-word;
-      max-width: 200px;
-    }
+  .file-menu-container {
+    visibility: hidden;
+    position: fixed;
   }
 
+  .file-item-container {
+    margin: 10px;
 
+    .file {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
 
+      &.clicked {
+        background-color: rgba(228, 241, 254, 1);
+        border-radius: 5px;
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        padding-top: 3px;
+      }
+
+      span {
+        &.file-name {
+          margin-top: 5px;
+          text-align: center;
+          word-wrap: break-word;
+          font-size: 13px;
+          max-width: 13ch;
+        }
+      }
+
+      @media screen and (min-width: 1400px) {
+        span {
+          &.file-name {
+            margin-top: 5px;
+            text-align: center;
+            word-wrap: break-word;
+            font-size: 13px;
+            max-width: 16ch;
+          }
+        }
+      }
+    }
+  }
 }
-.menu-item-icon {
-  color:white;
-}
 
-/*.menu-item-text {
-
-  font-weight: 400;
-}*/
-
-
-.mat-menu-item {
-  background-color: rgba(255,255,255,.5);
-  &:focus {outline:0 !important;}}

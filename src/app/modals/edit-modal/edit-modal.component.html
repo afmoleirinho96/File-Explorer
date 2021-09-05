@@ -1,29 +1,59 @@
+<h1 mat-dialog-title>{{title}}</h1>
 
+<mat-dialog-content [formGroup]="fileFormGroup">
+  <mat-form-field *ngIf="file.name">
+    <mat-label>Name</mat-label>
+    <input type="text" matInput formControlName="name" placeholder="Eg. File 1">
+    <mat-error *ngIf="fileFormGroup.get('name')?.hasError('minlength') && !fileFormGroup.get('name')?.hasError('required')">
+      Please enter a name with 2 or more characters
+    </mat-error>
+    <mat-error *ngIf="fileFormGroup.get('name')?.hasError('required')">
+      Name is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
 
+  <mat-form-field *ngIf="file.webViewLink || file.webViewLink === '' ">
+    <mat-label>Browser View Link</mat-label>
+    <input type="text" matInput formControlName="webViewLink" placeholder="Eg. https://drive.download">
+    <mat-error *ngIf="fileFormGroup.get('webViewLink')?.hasError('whitespace-between')">
+      Links cannot have empty spaces in between
+    </mat-error>
+    <mat-error *ngIf="fileFormGroup.get('webViewLink')?.hasError('is-insecure')">
+      Links are not mandatory but, if filled, must start with <strong>https</strong>
+    </mat-error>
+  </mat-form-field>
 
-  <h1 mat-dialog-title>{{title}}</h1>
+  <mat-form-field *ngIf="file.webContentLink || file.webContentLink === ''">
+    <mat-label>Download Link</mat-label>
+    <input type="text" matInput formControlName="webContentLink" placeholder="Eg. https://google.com">
+    <mat-error *ngIf="fileFormGroup.get('webContentLink')?.hasError('whitespace-between')">
+      <pre>here</pre>
+      Links cannot have empty spaces in between
+    </mat-error>
+    <mat-error *ngIf="fileFormGroup.get('webContentLink')?.hasError('is-insecure')">
+      Links are not mandatory but, if filled, must start with <strong>https</strong>
+    </mat-error>
+  </mat-form-field>
 
-  <mat-dialog-content>
-    <mat-form-field *ngIf="file.name">
-      <input matInput placeholder="File Name" [(ngModel)]="file.name">
-    </mat-form-field>
+  <mat-form-field *ngIf="file.iconLink || file.iconLink === ''">
+    <mat-label>Icon Link</mat-label>
+    <input type="text" matInput formControlName="iconLink" placeholder="Eg. https://someImage.com">
+    <mat-error *ngIf="fileFormGroup.get('iconLink')?.hasError('whitespace-between')">
+      <pre>here</pre>
+      Links cannot have empty spaces in between
+    </mat-error>
+    <mat-error *ngIf="fileFormGroup.get('iconLink')?.hasError('is-insecure')">
+      Links are not mandatory but, if filled, must start with <strong>https</strong>
+    </mat-error>
+  </mat-form-field>
 
-    <mat-form-field *ngIf="file.webContentLink">
-      <input matInput placeholder="Download Link" [(ngModel)]="file.webContentLink">
-    </mat-form-field>
+  <div class="date-container">
+    <span>Last Modified at: {{lastModifiedDate | date:'MMM d, y, h:mm:ss a' }}</span>
+  </div>
+</mat-dialog-content>
 
-    <mat-form-field *ngIf="file.webViewLink">
-      <input matInput placeholder="Browser Link" [(ngModel)]="file.webViewLink">
-    </mat-form-field>
-
-    <div>
-      <span>Last Modified at: {{file.modifiedTime | date:'MMM d, y, h:mm:ss' }}</span>
-    </div>
-
-  </mat-dialog-content>
-
-  <mat-dialog-actions style="justify-content: flex-end">
-    <button mat-raised-button mat-dialog-close color="accent">Cancel</button>
-    <button mat-raised-button [mat-dialog-close]="onModalClose(file)" color="primary">OK</button>
-  </mat-dialog-actions>
+<mat-dialog-actions style="justify-content: flex-end">
+  <button mat-raised-button mat-dialog-close color="accent">Cancel</button>
+  <button mat-raised-button (click)="onModalClose()" [disabled]="!fileFormGroup.dirty" color="primary">OK</button>
+</mat-dialog-actions>
 

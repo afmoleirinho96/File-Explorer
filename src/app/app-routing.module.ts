@@ -6,7 +6,7 @@ import {FileExplorerItemComponent} from "./file-explorer/item/file-explorer-item
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
   {
@@ -15,6 +15,10 @@ const routes: Routes = [
     children: [
       {path: '**', component: FileExplorerListComponent}
     ]
+  },
+  {
+    path: '**',
+    redirectTo: "/home"
   }
 ];
 

@@ -1,14 +1,52 @@
 <div class="container">
-  <mat-toolbar class="breadcrumb">{{breadCrumbPath}}</mat-toolbar>
-  <div class="file-list">
-    <mat-grid-list *ngIf="files && files.length > 0" cols="12" rowHeight="1:1">
-      <mat-grid-tile *ngFor="let file of files">
+
+  <breadcrumb (navigateInBreadcrumb)="navigateToPreviousFolder($event)"></breadcrumb>
+  <div class="refresh-container">
+    <button mat-icon-button color="accent" matTooltip="Remember: when reloading, new and changed files will be lost."
+            matTooltipPosition="left"
+            (click)="refreshPage()">
+      <mat-icon class="material-icons-two-tone">refresh</mat-icon>
+    </button>
+  </div>
+
+  <div  class="file-list">
+    <div class="folder-container">
+      <div class="folder-header">
+        <mat-icon class="material-icons-outlined">folder_open</mat-icon>
+        <span class="folder-header-title">Folders - {{getFolders(files).length}}</span>
+      </div>
+
+      <ng-container *ngTemplateOutlet="fileGridTemplate; context: { $implicit: getFolders(files), filesList:false }"></ng-container>
+    </div>
+
+    <div class="other-files-container">
+      <div class="other-files-header">
+        <mat-icon class="material-icons-outlined">file_present</mat-icon>
+        <span class="other-files-header-title">Files - {{getFiles(files).length}}</span>
+      </div>
+
+      <ng-container *ngTemplateOutlet="fileGridTemplate; context: { $implicit: getFiles(files), filesList:true }"></ng-container>
+    </div>
+  </div>
+
+  <new-file [currentId]="currentUrlId" (newItemCreated)="addNewItem($event)"></new-file>
+</div>
+
+<ng-template #fileGridTemplate let-items let-isFilelist="filesList">
+  <mat-grid-list cols="12" gutterSize="-10px" rowHeight="1:1">
+    <ng-container *ngFor="let file of items">
+      <mat-grid-tile>
         <file-explorer-item [file]="file"
                             (openFolder)="navigateToFolder($event)"
                             (fileEdited)="updateFileProperties($event)"
-                            (fileDeleted)="deleteFile($event)">
+                            (fileDeleted)="deleteFile($event)"
+                            (fileDuplicated)="addNewItem($event)">
         </file-explorer-item>
       </mat-grid-tile>
-    </mat-grid-list>
-  </div>
-</div>
+    </ng-container>
+
+    <mat-grid-tile *ngIf="isFilelist">
+      <file-upload (fileUploaded)="createFileUploaded($event)"></file-upload>
+    </mat-grid-tile>
+  </mat-grid-list>
+</ng-template>

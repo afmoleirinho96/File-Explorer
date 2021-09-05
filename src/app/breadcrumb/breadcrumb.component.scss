@@ -1,0 +1,45 @@
+@import 'src/styles.scss';
+
+:host {
+
+  .breadcrumb-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(214, 231, 239, 0.75);
+    height:40px;
+  }
+
+  .breadcrumb-list {
+    margin: 0;
+    padding: 0 1rem;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      font-size: 12px;
+      padding: 0 3px;
+
+      &::before {
+        content: ">";
+        display: inline-block;
+        font-weight: lighter;
+        padding-right: 3px;
+      }
+
+      &:first-child::before {
+        display: none;
+      }
+
+      &:not(:last-child) {
+        cursor: pointer;
+      }
+
+      &:last-child {
+        a {
+          color: $file-explorer-color-2;
+        }
+      }
+    }
+  }
+
+}

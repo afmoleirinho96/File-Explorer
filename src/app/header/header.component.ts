@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  headerTitle = 'Verve Ventures File Explorer';
+  headerTitle = 'File Explorer';
 
   constructor() { }
 

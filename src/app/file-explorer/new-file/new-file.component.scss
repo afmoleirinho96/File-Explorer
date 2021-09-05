@@ -1,0 +1,13 @@
+:host, .new-container {
+  display: flex;
+  flex-grow: 1;
+
+  .new-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+  }
+
+}
+

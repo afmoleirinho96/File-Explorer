@@ -4,14 +4,10 @@
 .file-explorer-content {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  height:auto;
-  min-height: 100%;
-
+  flex-grow: 1;
 }
 
 :host {
-  flex-direction: column;
 
 }
 .file-explorer-content {
@@ -21,8 +17,7 @@
   display:flex;
   bottom: 0;
   width: 100%;
-  position: fixed;
-  background-color: $verve-ventures-color-1;
+  background-color: $file-explorer-color-1;
 
   .social > a img {
     width: 32px;
